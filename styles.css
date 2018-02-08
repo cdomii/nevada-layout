@@ -1,0 +1,99 @@
+html {
+	overflow-x: hidden;
+}
+
+.containernav {
+	display: grid;
+	grid-template-columns: 1.2fr 4.5fr 3fr 1.2fr;
+	grid-template-rows: 70px min-content;
+	grid-column-gap: 1.4em;
+	grid-row-gap: 3.2em;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1.2fr 7.5fr 1.2fr;
+	grid-template-rows: repeat(4, 80vh);
+	grid-column-gap: 1.4em;
+	grid-row-gap: 1em;
+	margin-top: 9em;
+}
+
+.logo {
+	grid-column: 2 / 2;
+	grid-row: 1 / 1;
+	margin-top: 10px;
+	
+}
+
+.lid {
+	font-family: Playfair Display;
+	font-weight: 100;
+	font-size: 17pt;
+	line-height: 1.6;
+	color: #827665;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	
+}
+
+.navbar {
+	font-family: Open Sans;
+	font-size: 1em;
+	list-style-type: none; 
+	overflow: hidden;
+	padding: 0;
+	float: right;
+	margin-top: 30px;
+}
+
+li {
+	display: inline;
+	padding-left: 29px;
+	
+}
+
+.nav {
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.mainimg {
+	width: 100vw;
+	margin-top: 2em;
+}
+
+.containerabout {
+	font-family: Playfair Display;
+	font-size: 1em;
+	line-height: 1.6;
+	column-count: 2;
+	column-gap: 3em;
+}
+
+#about {
+	grid-column: 2 / 2;
+	grid-row: 1 / 2;
+}
+
+.article {
+	margin-top: 1px;
+}
+
+.article::first-letter {
+	font-weight: 700;
+	font-size: 7em;
+	float: left;
+	margin-right: 8px;
+}
+
+.signature {
+	float: right;
+}
