@@ -13,7 +13,7 @@ html {
 .container {
 	display: grid;
 	grid-template-columns: 1.2fr 7.5fr 1.2fr;
-	grid-template-rows: repeat(4, 80vh);
+	grid-template-rows: 70vh;
 	grid-column-gap: 1.4em;
 	grid-row-gap: 1em;
 	margin-top: 9em;
@@ -35,8 +35,7 @@ html {
 	grid-column-start: 2;
 	grid-column-end: 2;
 	grid-row-start: 2;
-	grid-row-end: 2;
-	
+	grid-row-end: 2;	
 }
 
 .navbar {
@@ -96,4 +95,77 @@ a {
 
 .signature {
 	float: right;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1.4fr 3.8fr 3.8fr 1.4fr;
+	grid-template-rows: repeat(2, 825px);
+	grid-column-gap: 1.4em;
+	grid-row-gap: 1.4em;
+	margin-top: 2em;
+}
+
+.leftimg {
+	grid-column: 2 / 2;
+}
+
+.rightimg {
+	grid-column: 3 / 3;
+}
+
+.item {
+	position: relative;
+}
+
+.image {
+	display: block;
+	height: auto;
+	width: 550px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.6s ease-in-out;
+	background-color: white;
+}
+
+.item:hover .overlay {
+	opacity: 0.5;
+	animation: text 0.5s ease-in-out;
+}
+
+.hovertext {
+	color: grey;
+	margin-left: 20px;
+	margin-top: 60px;
+	line-height: 0.4;
+	position: absolute;
+	
+	}
+
+@keyframes text {
+	0% {
+	left: 100px; 
+}
+
+100% {
+	left: 0px;
+}
+
+}
+
+h2 {
+	font-family: Open Sans;
+	font-weight: normal;
+	font-size: 1.9em;
+}
+
+p {
+	font-family: Playfair Display;
 }
